@@ -28,7 +28,7 @@ public final class AntiSkeletonTraps extends JavaPlugin implements Listener
     @EventHandler (priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onTrapSpawn(CreatureSpawnEvent ev)
     {
-        if (ev.getEntity()instanceof Horse
+        if (ev.getEntity() instanceof Horse
                 && ((Horse) ev.getEntity()).getVariant() == Horse.Variant.SKELETON_HORSE
                 && ev.getSpawnReason() == CreatureSpawnEvent.SpawnReason.LIGHTNING
                 && random.nextDouble() <= cancelProbability)
