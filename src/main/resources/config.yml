@@ -1,0 +1,3 @@
+# The probability a trap spawn will be cancelled.
+# If this probability is 1 (100%), all traps will be cancelled. 0, no one (why are you using this?!).
+trap-cancel-probability: 0.6
