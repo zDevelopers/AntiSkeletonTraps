@@ -1,6 +1,7 @@
 name: AntiSkeletonTraps
 version: 1.0
 main: fr.zcraft.AntiSkeletonTraps.AntiSkeletonTraps
+api-version: "1.13"
 
 description: Lowers the probability of skeleton traps spawns. In servers, they are likely to be EVERYWHERE at some point.
 author: Amaury Carrade
