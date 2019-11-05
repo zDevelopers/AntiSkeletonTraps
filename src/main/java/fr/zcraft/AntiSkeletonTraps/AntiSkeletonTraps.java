@@ -1,6 +1,6 @@
 package fr.zcraft.AntiSkeletonTraps;
 
-import org.bukkit.entity.Horse;
+import org.bukkit.entity.SkeletonHorse;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -28,8 +28,7 @@ public final class AntiSkeletonTraps extends JavaPlugin implements Listener
     @EventHandler (priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onTrapSpawn(CreatureSpawnEvent ev)
     {
-        if (ev.getEntity() instanceof Horse
-                && ((Horse) ev.getEntity()).getVariant() == Horse.Variant.SKELETON_HORSE
+        if (ev.getEntity() instanceof SkeletonHorse
                 && ev.getSpawnReason() == CreatureSpawnEvent.SpawnReason.LIGHTNING
                 && random.nextDouble() <= cancelProbability)
         {
